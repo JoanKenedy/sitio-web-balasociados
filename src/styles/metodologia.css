@@ -1,0 +1,62 @@
+.metodologia {
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px 0px;
+}
+.metodologia h2 {
+  color: #313234;
+  font-size: 1.7em;
+  margin: 0;
+  text-align: center;
+}
+.metodologia p {
+  color: #58565b;
+  text-align: justify;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+.container-metodologia {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px 20px;
+  gap: 30px;
+}
+.card-metodologia {
+  background-color: #fff;
+  padding: 35px;
+}
+.card-metodologia h5 {
+  color: #313234;
+  font-size: 1.7em;
+  margin: 0;
+}
+.card-metodologia p {
+  color: #6b8294;
+}
+@media (min-width: 768px) {
+  .metodologia {
+    padding: 25px 0px;
+  }
+  .metodologia h2 {
+    color: #313234;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+  }
+  .metodologia p {
+    color: #58565b;
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .container-metodologia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 20px;
+    gap: 30px;
+  }
+}

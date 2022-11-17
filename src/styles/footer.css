@@ -1,0 +1,128 @@
+.footer {
+  width: 100%;
+  padding-top: 75px;
+  background: url(../img/fondo_formulario.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1300px;
+}
+.container-footer {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+}
+
+.item-footer:nth-child(1) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.contacto-footer:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-footer:nth-child(2) iframe {
+  max-width: 100%;
+}
+.contacto-footer:nth-child(2) h5 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+}
+.contacto-footer:nth-child(2) h6 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  color: #fff;
+}
+.direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container-mapa {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px auto auto auto;
+}
+.item-principal-footer {
+  background: rgb(55, 59, 65);
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+.footer-social:nth-child(2) img {
+  max-width: 40%;
+}
+.footer-social h6 {
+  margin: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 2px 0px;
+}
+.footer-social p {
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 600px;
+    padding-top: 125px;
+  }
+  .item-footer:nth-child(1) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-principal-footer {
+    background: rgb(55, 59, 65);
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+  }
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 10px;
+  }
+  .footer-social:nth-child(1) {
+    order: 2;
+  }
+  .footer-social:nth-child(2) {
+    order: 1;
+  }
+  .footer-social:nth-child(3) {
+    order: 3;
+  }
+  .footer-social:nth-child(4) {
+    order: 4;
+  }
+  .footer-social:nth-child(2) img {
+    max-width: 60%;
+  }
+}

@@ -1,0 +1,145 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(55, 59, 65, 0.8);
+  padding: 7px 25px;
+}
+header .header-uno div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .header-uno div:nth-child(1) a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7em;
+}
+.header-uno div:nth-child(1) a i {
+  margin-right: 7px;
+}
+header .header-uno div:nth-child(2) {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(106, 110, 115, 0.8);
+  position: relative;
+  padding: 0px 15px 0px 20px;
+}
+nav img {
+  width: 28%;
+}
+.menu {
+  position: absolute;
+  top: -700px;
+  left: -200%;
+  background-color: #373b41;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 1.5s;
+  z-index: -1;
+}
+.menu li {
+  margin: 0px 20px;
+}
+.menu.active {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  background-color: #373b41;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0 0 80% 0;
+  transition: 1.5s;
+  z-index: -1;
+}
+.menu li {
+  list-style: none;
+  margin: 50px auto;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  header > div {
+    padding: 3px 25px;
+  }
+  header .header-uno div:nth-child(1) {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header-uno div:nth-child(1) a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 70px;
+  }
+  .header-uno div:nth-child(1) a i {
+    margin-right: 7px;
+  }
+  header .header-uno div:nth-child(2) {
+    display: block;
+  }
+  header .header-uno div:nth-child(2) p {
+    color: #fff;
+    font-size: 1em;
+  }
+  nav {
+    padding: 10px 40px 10px 70px;
+  }
+  .menu {
+    position: initial;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    z-index: inherit;
+    background: transparent;
+  }
+  .menu.active {
+    position: initial;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    z-index: inherit;
+    background: transparent;
+  }
+  .menu li {
+    margin: 0px 50px;
+  }
+  .btn-open {
+    display: none;
+  }
+  nav img {
+    max-width: 12%;
+  }
+}
